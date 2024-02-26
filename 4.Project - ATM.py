@@ -80,6 +80,7 @@ def main():
             print(atm.withdraw(username, amount))
         elif choice == "4":
             print("Thank you for using the ATM. Goodbye!")
+            atm.save_user_data()
             break
         else:
             print("Invalid choice. Please try again.")
